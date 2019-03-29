@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Planten">
+    <Position X="10.566" Y="7.007" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="Dieren">
+    <Position X="12.653" Y="7.354" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="Planteneter">
+    <Position X="14.341" Y="8.073" Height="0.291" Width="0.908" />
+  </Comment>
+  <Comment CommentText="AllesEter">
+    <Position X="17.823" Y="8.166" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="VleesEter">
+    <Position X="19.889" Y="8.142" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="Vingerhoedskruid">
+    <Position X="5.014" Y="8.222" Height="0.291" Width="1.339" />
+  </Comment>
+  <Comment CommentText="Gras">
+    <Position X="6.649" Y="9.049" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="VenijnBoom">
+    <Position X="7.417" Y="8.278" Height="0.291" Width="0.908" />
+  </Comment>
+  <Comment CommentText="Bloeiwijze Enum">
+    <Position X="4.785" Y="7.532" Height="0.291" Width="1.214" />
+  </Comment>
+  <Comment CommentText="Konijn">
+    <Position X="12.702" Y="9.969" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="Koe">
+    <Position X="15.378" Y="10.062" Height="0.291" Width="0.7" />
+  </Comment>
+  <Class Name="NaSim2.Konijn">
+    <Position X="12" Y="11" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAgAAAAAAAAAAAAABAIAAAAAAAIACAiAAAAAAAA=</HashCode>
+      <FileName>Objects\Konijn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NaSim2.Gras">
+    <Position X="6.25" Y="10" Width="2" />
+    <InheritanceLine Type="NaSim2.Plant" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="8.191" />
+        <Point X="7" Y="9.096" />
+        <Point X="7" Y="9.096" />
+        <Point X="7" Y="10" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Gras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NaSim2.Koe">
+    <Position X="14.75" Y="11" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAgAAAAAAAAAAAAABAIAAAAAAAIACAiAAAAAAAA=</HashCode>
+      <FileName>Objects\Koe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NaSim2.Venijnboom">
+    <Position X="9" Y="10" Width="2.25" />
+    <InheritanceLine Type="NaSim2.Plant" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="8.191" />
+        <Point X="7" Y="8.4" />
+        <Point X="10.125" Y="8.4" />
+        <Point X="10.125" Y="10" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAABAAgAAAAAAAABAAAAAAAEAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Venijnboom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NaSim2.GrafischObject" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>FQAAAAAAACgIwAAAAEBAAAAAgBQQEAAAAAAAAEAAAIA=</HashCode>
+      <FileName>GrafischObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NaSim2.Leven" Collapsed="true">
+    <Position X="11.25" Y="6" Width="1.5" />
+    <InheritanceLine Type="NaSim2.GrafischObject" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="12" Y="5.062" />
+        <Point X="12" Y="6" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AQAAEAAABAAIiAAAQQAAEAQAAAACAgACGACwIIAAgIA=</HashCode>
+      <FileName>Leven.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NaSim2.Plant" Collapsed="true">
+    <Position X="6.25" Y="7.5" Width="1.5" />
+    <InheritanceLine Type="NaSim2.Leven" ManuallyRouted="true">
+      <Path>
+        <Point X="12" Y="6.691" />
+        <Point X="12" Y="7.407" />
+        <Point X="7" Y="7.407" />
+        <Point X="7" Y="7.5" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="Bloeiwijze" Type="NaSim2.Bloeiwijze" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.25" Y="7.918" />
+        <Point X="5.384" Y="7.918" />
+        <Point X="5.384" Y="7.309" />
+        <Point X="4.25" Y="7.309" />
+        <Point X="4.25" Y="7.375" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.888" Y="0.162" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAIAAEAAAA=</HashCode>
+      <FileName>Objects\Plant.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Bloeiwijze" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NaSim2.Vingerhoedskruid">
+    <Position X="3" Y="10" Width="2.5" />
+    <InheritanceLine Type="NaSim2.Plant" ManuallyRouted="true">
+      <Path>
+        <Point X="7" Y="8.191" />
+        <Point X="7" Y="8.395" />
+        <Point X="4.25" Y="8.395" />
+        <Point X="4.25" Y="10" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Vingerhoedskruid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NaSim2.Dier" Collapsed="true">
+    <Position X="15.75" Y="7.5" Width="1.5" />
+    <InheritanceLine Type="NaSim2.Leven" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12" Y="6.691" />
+        <Point X="12" Y="7.813" />
+        <Point X="15.75" Y="7.813" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>QAgCAAgAAAAAAAAEAUAAAACAAAAAIQAIMEAEAAAAAAA=</HashCode>
+      <FileName>Dier.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Right" Position="0.22" />
+  </Class>
+  <Class Name="NaSim2.Planteneter">
+    <Position X="13.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Planteneter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NaSim2.VleesEter">
+    <Position X="19.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VleesEter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NaSim2.AllesEter">
+    <Position X="17.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AllesEter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NaSim2.Natuur" Collapsed="true">
+    <Position X="22.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAJQAAAAAFgAAIAAAAEAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Natuur.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NaSim2.Objects.Jaguar" Collapsed="true">
+    <Position X="21.5" Y="10.5" Width="1.5" />
+    <InheritanceLine Type="NaSim2.VleesEter" FixedToPoint="true">
+      <Path>
+        <Point X="20.5" Y="10.175" />
+        <Point X="20.5" Y="10.937" />
+        <Point X="21.5" Y="10.937" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAgAAAAAAAAAAAAABAIAAAAAAAIACAiAAAAAAAA=</HashCode>
+      <FileName>Objects\Jaguar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NaSim2.Lynx" Collapsed="true">
+    <Position X="21.5" Y="11.5" Width="1.5" />
+    <InheritanceLine Type="NaSim2.VleesEter" FixedToPoint="true">
+      <Path>
+        <Point X="20.5" Y="10.175" />
+        <Point X="20.5" Y="11.875" />
+        <Point X="21.5" Y="11.875" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAgAAAAAAAAAAAAABAIAAAAAAAIACAiAAAAAAAA=</HashCode>
+      <FileName>Objects\Lynx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NaSim2.Beer" Collapsed="true">
+    <Position X="17.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAgAAAAAAAAAAAAABAIAAAAAAAIACAiAAAAAAAA=</HashCode>
+      <FileName>Objects\Beer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="NaSim2.Bloeiwijze" Collapsed="true">
+    <Position X="3" Y="7" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>MQCDEQAAAAIgAGgAAAAQAAECAAgAAAQAAAhRAMAEAAI=</HashCode>
+      <FileName>Bloeiwijze.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="NaSim2.SoortLeven" Collapsed="true">
+    <Position X="22.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEABAAAAAAAAgCAAAAAAAIAAABAAAACAAEAAAAAAA=</HashCode>
+      <FileName>SoortLeven.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
